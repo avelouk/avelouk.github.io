@@ -27,7 +27,8 @@ h1 {
 p {
   font-size: 1.2rem;
   line-height: 1.5;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 img {
@@ -111,7 +112,7 @@ a:active {
 
 .bird-container {
   position: absolute;
-  top: 30%;
+  top: 2%;
   left: -10%;
   transform: scale(0) translateX(-10vw);
   will-change: transform;
