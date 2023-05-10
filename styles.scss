@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	font-size: 2vh;
+}
+
 body {
 	background-image: url("bg.png");
 	background-color: #1a1a1a;
@@ -14,190 +18,184 @@ body {
 	font-size: 1.2rem;
 	margin: 0;
 	padding: 0;
-	height: 100%; 
+	height: 100vh;
 	overflow: hidden;
-	background-position: right; 
-	background-repeat: no-repeat; 
+	background-position: bottom right;
+	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 .container {
 	padding: 2rem;
 }
+
 h1 {
 	font-size: 3rem;
 	margin-bottom: 2rem;
 	text-align: center;
 }
+
 p {
 	font-size: 1.2rem;
 	line-height: 1.5;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
 }
+
 img {
 	border-radius: 50%;
 	width: 30vmin;
 	height: 30vmin;
 	border: solid;
 	border-color: hsl(345deg 100% 47%);
-	border-width: 5px;
+	border-width: 0.7vh;
 	object-fit: cover;
 	object-position: center;
 	margin: 5vmin;
 	transition: all 0.2s ease;
-  }
+}
 
-  .big-circle {
-	padding-top:100%; 
-	width: 90%;
+.big-circle {
+	padding-top: 190vh;
+	width: 190vh;
 	position: absolute;
-	top: -10%;
-	left: -5%;
+	top: -10vh;
+	left: -10vh;
 	background-color: #050505eb;
 	border-radius: 50%;
-	z-index:-1;
+	z-index: -1;
 	// display: inline-block;
-  }
-  
+}
+
 /* CV button */
 .button-82-pushable {
-  position: relative;
-  border: none;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-  outline-offset: 4px;
-  transition: filter 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+	position: relative;
+	border: none;
+	background: transparent;
+	padding: 0;
+	cursor: pointer;
+	outline-offset: 4px;
+	transition: filter 250ms;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
 }
 
 .button-82-shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background: hsla(0, 0%, 100%, 0.1);
-  will-change: transform;
-  transform: translateY(2px);
-  transition:
-    transform
-    600ms
-    cubic-bezier(.3, .7, .4, 1);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	background: hsla(0, 0%, 100%, 0.1);
+	will-change: transform;
+	transform: translateY(2px);
+	transition:
+		transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
 
 .button-82-edge {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background: linear-gradient(
-    to left,
-    hsl(340deg 100% 16%) 0%,
-    hsl(340deg 100% 32%) 8%,
-    hsl(340deg 100% 32%) 92%,
-    hsl(340deg 100% 16%) 100%
-  );
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	background: linear-gradient(to left,
+			hsl(340deg 100% 16%) 0%,
+			hsl(340deg 100% 32%) 8%,
+			hsl(340deg 100% 32%) 92%,
+			hsl(340deg 100% 16%) 100%);
 }
 
 .button-82-front {
-  display: block;
-  position: relative;
-  padding: 12px 27px;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  color: white;
-  background: hsl(345deg 100% 47%);
-  will-change: transform;
-  transform: translateY(-4px);
-  transition:
-    transform
-    600ms
-    cubic-bezier(.3, .7, .4, 1);
+	display: block;
+	position: relative;
+	padding: 12px 27px;
+	border-radius: 12px;
+	font-size: 1.1rem;
+	color: white;
+	background: hsl(345deg 100% 47%);
+	will-change: transform;
+	transform: translateY(-4px);
+	transition:
+		transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
 
 @media (min-width: 768px) {
-  .button-82-front {
-    font-size: 1.25rem;
-    padding: 12px 42px;
-  }
+	.button-82-front {
+		font-size: 1.25rem;
+		padding: 12px 42px;
+	}
 }
 
 .button-82-pushable:hover {
-  filter: brightness(110%);
-  -webkit-filter: brightness(110%);
+	filter: brightness(110%);
+	-webkit-filter: brightness(110%);
 }
 
 .button-82-pushable:hover .button-82-front {
-  transform: translateY(-6px);
-  transition:
-    transform
-    250ms
-    cubic-bezier(.3, .7, .4, 1.5);
+	transform: translateY(-6px);
+	transition:
+		transform 250ms cubic-bezier(.3, .7, .4, 1.5);
 }
 
 .button-82-pushable:active .button-82-front {
-  transform: translateY(-2px);
-  transition: transform 34ms;
+	transform: translateY(-2px);
+	transition: transform 34ms;
 }
 
 .button-82-pushable:hover .button-82-shadow {
-  transform: translateY(4px);
-  transition:
-    transform
-    250ms
-    cubic-bezier(.3, .7, .4, 1.5);
+	transform: translateY(4px);
+	transition:
+		transform 250ms cubic-bezier(.3, .7, .4, 1.5);
 }
 
 .button-82-pushable:active .button-82-shadow {
-  transform: translateY(1px);
-  transition: transform 34ms;
+	transform: translateY(1px);
+	transition: transform 34ms;
 }
 
 .button-82-pushable:focus:not(:focus-visible) {
-  outline: none;
+	outline: none;
 }
 
- /* unvisited link */
- a:link {
+/* unvisited link */
+a:link {
 	color: #fff;
-  }
-  
-  /* visited link */
-  a:visited {
+}
+
+/* visited link */
+a:visited {
 	color: #fff;
-  }
-  
-  /* mouse over link */
-  a:hover {
+}
+
+/* mouse over link */
+a:hover {
 	color: #f36;
-  }
-  
-  /* selected link */
-  a:active {
+}
+
+/* selected link */
+a:active {
 	color: hsl(345deg 100% 47%);
-  } 
+}
 
 /*Important:*/
-.link-spanner{
-	position:absolute; 
-	width:100%;
-	height:100%;
-	top:0;
+.link-spanner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
 	left: 0;
 	z-index: 1;
-  
+
 	/* edit: fixes overlap error in IE7/8, 
 	   make sure you have an empty gif 
 	background-image: url('empty.gif');*/
-  }     
+}
 
- /* birds */
+/* birds */
 .bird {
 	background-image: url(./bird.svg);
 	mix-blend-mode: difference;
@@ -205,8 +203,8 @@ img {
 	width: 88px;
 	height: 125px;
 	will-change: background-position;
-	
-	
+
+
 	animation-name: fly-cycle;
 	animation-timing-function: steps(10);
 	animation-iteration-count: infinite;
@@ -214,19 +212,19 @@ img {
 
 	&--one {
 		animation-duration: 1s;
-		animation-delay: -0.5s;		
+		animation-delay: -0.5s;
 	}
-	
+
 	&--two {
 		animation-duration: 0.9s;
 		animation-delay: -0.75s;
 	}
-	
+
 	&--three {
 		animation-duration: 1.25s;
 		animation-delay: -0.25s;
 	}
-	
+
 	&--four {
 		animation-duration: 1.1s;
 		animation-delay: -0.5s;
@@ -236,117 +234,117 @@ img {
 
 .bird-container {
 	position: absolute;
-	top: 2%;
-	left: -10%;
+	top: 2vh;
+	left: -10vh;
 	transform: scale(0) translateX(-10vw);
 	will-change: transform;
-	
+
 	animation-name: fly-right-one;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 
 	&:hover {
 		animation-play-state: paused;
-	  }
-	
+	}
+
 	&--one {
 		animation-duration: 15s;
 		animation-delay: 0;
 	}
-	
+
 	&--two {
 		animation-duration: 16s;
 		animation-delay: 1s;
 	}
-	
+
 	&--three {
 		animation-duration: 14.6s;
 		animation-delay: 9.5s;
 	}
-	
+
 	&--four {
 		animation-duration: 16s;
 		animation-delay: 10.25s;
 	}
-	
+
 }
 
 @keyframes fly-cycle {
-	
+
 	100% {
 		background-position: -900px 0;
 	}
-	
+
 }
 
 @keyframes fly-right-one {
-	
+
 	0% {
 		transform: scale(0.3) translateX(-10vw);
 	}
-	
+
 	10% {
 		transform: translateY(2vh) translateX(10vw) scale(0.4);
 	}
-	
+
 	20% {
 		transform: translateY(0vh) translateX(30vw) scale(0.5);
 	}
-	
+
 	30% {
 		transform: translateY(4vh) translateX(50vw) scale(0.6);
 	}
-	
+
 	40% {
 		transform: translateY(2vh) translateX(70vw) scale(0.6);
 	}
-	
+
 	50% {
 		transform: translateY(0vh) translateX(90vw) scale(0.6);
 	}
-	
+
 	60% {
 		transform: translateY(0vh) translateX(110vw) scale(0.6);
 	}
-	
+
 	100% {
 		transform: translateY(0vh) translateX(110vw) scale(0.6);
 	}
-	
+
 }
 
 @keyframes fly-right-two {
-	
+
 	0% {
 		transform: translateY(-2vh) translateX(-10vw) scale(0.5);
 	}
-	
+
 	10% {
 		transform: translateY(0vh) translateX(10vw) scale(0.4);
 	}
-	
+
 	20% {
 		transform: translateY(-4vh) translateX(30vw) scale(0.6);
 	}
-	
+
 	30% {
 		transform: translateY(1vh) translateX(50vw) scale(0.45);
 	}
-	
+
 	40% {
 		transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
 	}
-	
+
 	50% {
 		transform: translateY(0vh) translateX(90vw) scale(0.45);
 	}
-	
+
 	51% {
 		transform: translateY(0vh) translateX(110vw) scale(0.45);
 	}
-	
+
 	100% {
 		transform: translateY(0vh) translateX(110vw) scale(0.45);
 	}
-	
+
 }
