@@ -7,12 +7,18 @@
 }
 
 body {
+	background-image: url("bg.png");
 	background-color: #1a1a1a;
 	color: #fff;
 	font-family: monospace;
 	font-size: 1.2rem;
 	margin: 0;
 	padding: 0;
+	height: 100%; 
+	overflow: hidden;
+	background-position: right; 
+	background-repeat: no-repeat; 
+	background-size: cover;
 }
 .container {
 	padding: 2rem;
@@ -40,8 +46,20 @@ img {
 	margin: 5vmin;
 	transition: all 0.2s ease;
   }
+
+  .big-circle {
+	padding-top:100%; 
+	width: 90%;
+	position: absolute;
+	top: -10%;
+	left: -5%;
+	background-color: #050505eb;
+	border-radius: 50%;
+	z-index:-1;
+	// display: inline-block;
+  }
   
-/* CSS */
+/* CV button */
 .button-82-pushable {
   position: relative;
   border: none;
@@ -165,19 +183,6 @@ img {
 	color: hsl(345deg 100% 47%);
   } 
 
-.loading {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: rgba(0, 0, 0, 0.5);
-	z-index: 9999;
-}
-
 /*Important:*/
 .link-spanner{
 	position:absolute; 
@@ -192,6 +197,7 @@ img {
 	background-image: url('empty.gif');*/
   }     
 
+ /* birds */
 .bird {
 	background-image: url(./bird.svg);
 	mix-blend-mode: difference;

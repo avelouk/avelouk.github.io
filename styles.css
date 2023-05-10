@@ -6,12 +6,18 @@
 }
 
 body {
+  background-image: url("bg.png");
   background-color: #1a1a1a;
   color: #fff;
   font-family: monospace;
   font-size: 1.2rem;
   margin: 0;
   padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -46,7 +52,18 @@ img {
   transition: all 0.2s ease;
 }
 
-/* CSS */
+.big-circle {
+  padding-top: 100%;
+  width: 90%;
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  background-color: rgba(5, 5, 5, 0.9215686275);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* CV button */
 .button-82-pushable {
   position: relative;
   border: none;
@@ -152,19 +169,6 @@ a:active {
   color: hsl(345, 100%, 47%);
 }
 
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
-}
-
 /*Important:*/
 .link-spanner {
   position: absolute;
@@ -178,6 +182,7 @@ a:active {
   background-image: url('empty.gif');*/
 }
 
+/* birds */
 .bird {
   background-image: url(./bird.svg);
   mix-blend-mode: difference;
